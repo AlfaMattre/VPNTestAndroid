@@ -1,6 +1,6 @@
-package com.aliakseilukin.vpntestandroid.data.data_source
+package com.aliakseilukin.vpntestandroid.data.data_source.remote
 
-import com.aliakseilukin.vpntestandroid.data.model.CountryResponse
+import com.aliakseilukin.vpntestandroid.data.model.remote.CountryResponse
 import com.aliakseilukin.vpntestandroid.data.service.CountriesApi
 import javax.inject.Inject
 

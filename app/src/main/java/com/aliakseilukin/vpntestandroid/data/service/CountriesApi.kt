@@ -1,6 +1,6 @@
 package com.aliakseilukin.vpntestandroid.data.service
 
-import com.aliakseilukin.vpntestandroid.data.model.CountryResponse
+import com.aliakseilukin.vpntestandroid.data.model.remote.CountryResponse
 import retrofit2.http.GET
 
 interface CountriesApi {

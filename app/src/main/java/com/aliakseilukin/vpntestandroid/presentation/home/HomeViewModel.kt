@@ -2,7 +2,6 @@ package com.aliakseilukin.vpntestandroid.presentation.home
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.aliakseilukin.vpntestandroid.domain.model.Country
 import com.aliakseilukin.vpntestandroid.domain.model.ResultState
 import com.aliakseilukin.vpntestandroid.domain.model.toUiMessage
 import com.aliakseilukin.vpntestandroid.domain.usecase.GetCountriesUseCase
@@ -11,7 +10,6 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
-import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 

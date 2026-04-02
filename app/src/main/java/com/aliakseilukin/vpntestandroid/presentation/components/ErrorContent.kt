@@ -10,7 +10,9 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import com.aliakseilukin.vpntestandroid.R
 
 @Composable
 fun ErrorContent(
@@ -26,7 +28,7 @@ fun ErrorContent(
         Text(text = message)
         Spacer(modifier = Modifier.height(12.dp))
         Button(onClick = onRetry) {
-            Text(text = "Retry")
+            Text(text = stringResource(R.string.button_error_retry))
         }
     }
 }
