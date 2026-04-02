@@ -26,7 +26,6 @@ local.properties
 *.swo
 
 ## OS Files
-.DS_Store
 Thumbs.db
 *.log
 
