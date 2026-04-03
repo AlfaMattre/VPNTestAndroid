@@ -39,7 +39,7 @@ fun HomeScreen(
         state.errorMessage != null -> {
             ErrorContent(
                 message = state.errorMessage,
-                onRetry = viewModel::loadCountries,
+                onRetry = viewModel::retryLoadingCountries,
                 modifier = modifier
             )
         }

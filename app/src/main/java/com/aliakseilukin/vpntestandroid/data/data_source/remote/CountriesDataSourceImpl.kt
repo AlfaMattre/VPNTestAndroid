@@ -4,7 +4,7 @@ import com.aliakseilukin.vpntestandroid.data.model.remote.CountryResponse
 import com.aliakseilukin.vpntestandroid.data.service.CountriesApi
 import javax.inject.Inject
 
-class CountriesDataSourceImpl@Inject constructor(
+class CountriesDataSourceImpl @Inject constructor(
     private val apiService: CountriesApi
 ) : CountriesDataSource {
 
