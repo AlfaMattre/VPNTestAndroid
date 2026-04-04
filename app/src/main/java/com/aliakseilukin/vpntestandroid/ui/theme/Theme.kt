@@ -13,47 +13,73 @@ import androidx.compose.ui.platform.LocalContext
 
 private val LightColorScheme = lightColorScheme(
     primary = PrimaryLight,
-    onPrimary = OnLight,
-    primaryContainer = TertiaryLight,
-    onPrimaryContainer = Color.White,
+    onPrimary = OnPrimaryLight,
+    primaryContainer = Color(0xFFDBE7FF),
+    onPrimaryContainer = Color(0xFF001D35),
 
     secondary = SecondaryLight,
-    onSecondary = Color.White,
+    onSecondary = OnSecondaryLight,
+    secondaryContainer = Color(0xFFCFF4FF),
+    onSecondaryContainer = Color(0xFF001F24),
 
     tertiary = TertiaryLight,
-    onTertiary = Color.White,
+    onTertiary = OnTertiaryLight,
+    tertiaryContainer = Color(0xFFCFFFF1),
+    onTertiaryContainer = Color(0xFF002114),
+
+    onError = Color.White,
+    errorContainer = Color(0xFFFFDAD6),
+    onErrorContainer = Color(0xFF410002),
 
     background = NeutralLight,
     onBackground = OnNeutralLight,
 
-    surface = NeutralLight,
-    onSurface = OnNeutralLight
+    surface = SurfaceLight,
+    onSurface = OnSurfaceLight,
+    surfaceVariant = Color(0xFFE2E8F0),
+    onSurfaceVariant = Color(0xFF475569),
+
+    outline = Color(0xFF94A3B8),
+    outlineVariant = Color(0xFFCBD5E1)
 )
 
 private val DarkColorScheme = darkColorScheme(
     primary = PrimaryDark,
-    onPrimary = OnDark,
-    primaryContainer = TertiaryDark,
-    onPrimaryContainer = Color.White,
+    onPrimary = OnPrimaryDark,
+    primaryContainer = Color(0xFF1E3A8A),
+    onPrimaryContainer = Color(0xFFDBE7FF),
 
     secondary = SecondaryDark,
-    onSecondary = Color.White,
+    onSecondary = OnSecondaryDark,
+    secondaryContainer = Color(0xFF164E63),
+    onSecondaryContainer = Color(0xFFCFF4FF),
 
     tertiary = TertiaryDark,
-    onTertiary = Color.White,
+    onTertiary = OnTertiaryDark,
+    tertiaryContainer = Color(0xFF065F46),
+    onTertiaryContainer = Color(0xFFCFFFF1),
+
+    onError = Color(0xFF690005),
+    errorContainer = Color(0xFF93000A),
+    onErrorContainer = Color(0xFFFFDAD6),
 
     background = NeutralDark,
     onBackground = OnNeutralDark,
 
-    surface = NeutralDark,
-    onSurface = OnNeutralDark
+    surface = SurfaceDark,
+    onSurface = OnSurfaceDark,
+    surfaceVariant = Color(0xFF334155),
+    onSurfaceVariant = Color(0xFF94A3B8),
+
+    outline = Color(0xFF64748B),
+    outlineVariant = Color(0xFF475569)
 )
 
 @Composable
 fun VPNTestAndroidTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     // Dynamic color is available on Android 12+
-    dynamicColor: Boolean = true,
+    dynamicColor: Boolean = false,
     content: @Composable () -> Unit
 ) {
     val colorScheme = when {

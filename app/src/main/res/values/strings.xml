@@ -1,5 +1,18 @@
 <resources>
     <string name="app_name">VPNTestAndroid</string>
 
+    <string name="bottom_sheet_title">Select country</string>
     <string name="button_error_retry">Retry</string>
+    <string name="button_error_dismiss">Dismiss</string>
+
+    <string name="section_countries_primary">Popular Servers</string>
+    <string name="section_countries_others">Others Servers</string>
+
+    <string name="error_device_offline">Device is offline. Turn on Wi-Fi or mobile data.</string>
+    <string name="error_counties_empty">No countries available.</string>
+    <string name="error_no_country_selected">No country selected</string>
+
+    <string name="vpn_status_connected">Connected</string>
+    <string name="vpn_status_connecting">Connecting…</string>
+    <string name="vpn_status_disconnected">Disconnected</string>
 </resources>

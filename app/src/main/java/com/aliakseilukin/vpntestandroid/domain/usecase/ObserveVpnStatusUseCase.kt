@@ -1,6 +1,6 @@
 package com.aliakseilukin.vpntestandroid.domain.usecase
 
-import com.aliakseilukin.vpntestandroid.domain.model.StubVpnStatus
+import com.aliakseilukin.vpntestandroid.domain.stub_vpn.StubVpnStatus
 import com.aliakseilukin.vpntestandroid.domain.repository.StubVpnRepository
 import kotlinx.coroutines.flow.StateFlow
 import javax.inject.Inject

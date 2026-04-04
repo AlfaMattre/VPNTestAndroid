@@ -1,6 +1,6 @@
-package com.aliakseilukin.vpntestandroid.domain.model
+package com.aliakseilukin.vpntestandroid.domain.stub_vpn
 
-interface StubVpnStatus {
+sealed interface StubVpnStatus {
     data object Disconnected : StubVpnStatus
     data object Connecting : StubVpnStatus
     data object Connected : StubVpnStatus
